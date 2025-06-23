@@ -89,36 +89,20 @@ const skills = [
 // Projects data
 const projects = [
     {
-        title: 'E-commerce Website',
-        description: 'A full-stack e-commerce platform with product listings, cart functionality, and user authentication.',
-        technologies: ['React', 'Node.js', 'MongoDB'],
-        image: 'https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80',
-        link: '#',
-        github: '#'
+        title: 'Railway Ticket Booking System',
+        description: 'A full-stack Railway Ticket Booking platform with ticket listings, booking functionality, and user authentication.',
+        technologies: ['Java', 'Swing', 'MySQL'],
+        image: 'https://th.bing.com/th/id/OIP.d8hiDnEmKiM-6Bpn3qfZPAHaEk?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3',
+        //link: '#',
+        github: 'https://github.com/nzizabenjamin/Railway-Ticket-Booking-System-Java-Using-Swing-Mysql'
     },
     {
-        title: 'Task Management App',
-        description: 'A productivity application for organizing tasks with drag-and-drop functionality and deadline reminders.',
-        technologies: ['JavaScript', 'Firebase', 'Tailwind CSS'],
+        title: 'Expense Tracker With Recipts',
+        description: 'A productivity application for tracking your expenses.',
+        technologies: ['Java', 'Swing', 'MySQL'],
         image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1772&q=80',
         link: '#',
-        github: '#'
-    },
-    {
-        title: 'Weather Dashboard',
-        description: 'Real-time weather information application with 5-day forecast and location search functionality.',
-        technologies: ['React', 'OpenWeather API', 'Chart.js'],
-        image: 'https://images.unsplash.com/photo-1601134467661-3d775b999c8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1675&q=80',
-        link: '#',
-        github: '#'
-    },
-    {
-        title: 'Recipe Finder',
-        description: 'Web application that helps users discover recipes based on ingredients they have available.',
-        technologies: ['JavaScript', 'Edamam API', 'Bootstrap'],
-        image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80',
-        link: '#',
-        github: '#'
+        github: 'https://github.com/nzizabenjamin/Java-Swing-Expense-Tracker'
     },
     {
         title: 'Portfolio Website',
@@ -126,16 +110,9 @@ const projects = [
         technologies: ['HTML', 'CSS', 'JavaScript', 'Tailwind CSS'],
         image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80',
         link: '#',
-        github: '#'
+        github: 'https://github.com/nzizabenjamin/resume'
     },
-    {
-        title: 'Blog Platform',
-        description: 'Content management system for creating and managing blog posts with markdown support.',
-        technologies: ['Python', 'Django', 'PostgreSQL'],
-        image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
-        link: '#',
-        github: '#'
-    }
+    
 ];
 
 // Generate skills HTML
@@ -164,8 +141,8 @@ projects.forEach(project => {
                 ${project.technologies.map(tech => `<span class="text-xs bg-gray-100 dark:bg-gray-600 px-2 py-1 rounded">${tech}</span>`).join('')}
             </div>
             <div class="flex space-x-3">
-                <a href="${project.link}" class="text-primary-600 dark:text-primary-400 hover:underline">Live Demo</a>
-                <a href="${project.github}" class="text-gray-600 dark:text-gray-300 hover:underline">View Code</a>
+               <!-- <a href="${project.link}" class="text-primary-600 dark:text-primary-400 hover:underline">Live Demo</a> -->
+                <a href="${project.github}" class="text-gray-600 dark:text-gray-300 hover:underline">View on GitHub</a>
             </div>
         </div>
     `;
